@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mac SYSTEM "file:///usr/share/emane/dtd/mac.dtd">
+<mac name="CSMA-CD MAC" library="csmacdmaclayer">
+  <param name="enablepromiscuousmode" value="off"/>
+  <param name="datarate"              value="1M"/>
+  <param name="cwmax"                 value="1024"/>
+  <param name="retrylimits"           value="16"/>
+  <param name="prodelay"              value="100"/>
+  <param name="channel"               value="1"/>
+</mac>

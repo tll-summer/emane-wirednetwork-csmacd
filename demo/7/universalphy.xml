@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE phy SYSTEM "file://usr/share/emane/dtd/phy.dtd">
+<phy name="universalphy" library="universalphylayer">
+    <param name="bandwidth"                  value="1M"/>
+    <param name="antennagain"                value="0.0"/>
+    <param name="systemnoisefigure"          value="4.0"/>
+    <param name="frequencyofinterest"        value="2.347G"/>
+    <param name="pathlossmode"               value="pathloss"/>
+    <param name="noiseprocessingmode"        value="off"/>
+    <param name="defaultconnectivitymode"    value="off"/>
+    <param name="txpower"                    value="0.0"/>
+    <param name="frequency"                  value="2.347G"/>
+    <param name="antennaazimuth"             value="0.0"/>
+    <param name="antennaelevation"           value="0.0"/>
+    <param name="subid"                      value="1"/>
+</phy>
+

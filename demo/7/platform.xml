@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE platform SYSTEM "file:///usr/share/emane/dtd/platform.dtd">
+<platform name="Platform 1" id="1">
+  <param name="otamanagerchannelenable" value="off"/>
+  <param name="eventservicegroup" value="224.1.2.8:45703"/>
+  <param name="eventservicedevice" value="br0"/>
+  <param name="debugportenable" value="on"/>
+
+  <nem name="NEM-1" id="1" definition="ieee80211abgnem.xml">
+    <param name="platformendpoint" value="node-server:8201"/>
+    <param name="transportendpoint" value="node-1:8301"/>
+    <transport definition="transvirtual.xml">
+      <param name="address" value="10.100.0.1"/>
+      <param name="mask" value="255.255.255.0"/>
+    </transport>
+  </nem>
+
+  <nem name="NEM-2" id="2" definition="ieee80211abgnem.xml">
+    <param name="platformendpoint" value="node-server:8202"/>
+    <param name="transportendpoint" value="node-2:8302"/>
+    <transport definition="transvirtual.xml">
+      <param name="address" value="10.100.0.2"/>
+      <param name="mask" value="255.255.255.0"/>
+    </transport>
+  </nem>
+
+
+  <nem name="NEM-3" id="3" definition="ieee80211abgnem.xml">
+    <param name="platformendpoint" value="node-server:8203"/>
+    <param name="transportendpoint" value="node-3:8303"/>
+    <transport definition="transvirtual.xml">
+      <param name="address" value="10.100.0.3"/>
+      <param name="mask" value="255.255.255.0"/>
+    </transport>
+  </nem>
+
+  <nem name="NEM-4" id="4" definition="ieee80211abgnem.xml">
+    <param name="platformendpoint" value="node-server:8204"/>
+    <param name="transportendpoint" value="node-4:8304"/>
+    <transport definition="transvirtual.xml" group="4-7">
+      <param name="address" value="10.100.0.4"/>
+      <param name="mask" value="255.255.255.0"/>
+    </transport>
+  </nem>
+
+  <nem name="NEM-5" id="5" definition="csmacdnem.xml">
+    <param name="platformendpoint" value="node-server:8205"/>
+    <param name="transportendpoint" value="node-5:8305"/>
+    <mac definition="csmacdmac.xml">
+      <param name="channel" value="1"/>
+    </mac>
+    <transport definition="transvirtual.xml" group="5-8">
+      <param name="address" value="10.100.0.5"/>
+      <param name="mask" value="255.255.255.0"/>
+    </transport>
+  </nem>
+
+  <nem name="NEM-6" id="6" definition="csmacdnem.xml">
+    <param name="platformendpoint" value="node-server:8206"/>
+    <param name="transportendpoint" value="node-6:8306"/>
+    <mac definition="csmacdmac.xml">
+      <param name="channel" value="2"/>
+    </mac>
+    <transport definition="transvirtual.xml">
+      <param name="address" value="10.100.0.6"/>
+      <param name="mask" value="255.255.255.0"/>
+    </transport>
+  </nem>
+
+  <nem name="NEM-7" id="7" definition="csmacdnem.xml">
+    <param name="platformendpoint" value="node-server:8207"/>
+    <param name="transportendpoint" value="node-4:8307"/>
+    <mac definition="csmacdmac.xml">
+      <param name="channel" value="1"/>
+    </mac>
+    <transport definition="transvirtual.xml" group="4-7">
+      <param name="device" value="emane1"/>
+      <param name="address" value="10.100.0.7"/>
+      <param name="mask" value="255.255.255.0"/>
+    </transport>
+  </nem>
+
+  <nem name="NEM-8" id="8" definition="csmacdnem.xml">
+    <param name="platformendpoint" value="node-server:8208"/>
+    <param name="transportendpoint" value="node-5:8308"/>
+    <mac definition="csmacdmac.xml">
+      <param name="channel" value="2"/>
+    </mac>
+    <transport definition="transvirtual.xml" group="5-8">
+      <param name="device" value="emane1"/>
+      <param name="address" value="10.100.0.8"/>
+      <param name="mask" value="255.255.255.0"/>
+    </transport>
+  </nem>
+
+
+</platform>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nem SYSTEM "file:///usr/share/emane/dtd/nem.dtd">
+<nem name="CSMA-CD NEM">
+  <mac definition="csmacdmac.xml"/>
+  <phy definition="bypassphy.xml">
+  </phy>
+  <transport definition="transvirtual.xml"/>
+</nem>

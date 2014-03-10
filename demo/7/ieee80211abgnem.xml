@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nem SYSTEM "file://usr/share/emane/dtd/nem.dtd">
+<nem name="IEEE 802.11 NEM">
+<mac definition="ieee80211abgmac.xml"/>
+<phy definition="universalphy.xml"/>
+<transport definition="transvirtual.xml"/>
+</nem>
