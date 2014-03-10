@@ -2,27 +2,27 @@ demo2:
 
  (n) (n) (n) (n)
   |   |   |   |
-¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+-----------------
 
-¡ª¡ª¡ª:wired channel
+----:wired channel
 (n):node
 
 
 demo6:
 
-(n)¡ª¡ª¡ª¡ª(X)¡ª¡ª¡ª¡ª(n)
+(n)----(X)-----(n)
 
 (X):router
 
 
 demo7:
-                 £¨c£©
+                 (c)
                   |
                   |
-(s)¡ª¡ª¡ª(X)¡ª¡ª¡ª(AP)¡ª¡ª£¨c£©
+(s)-----(X)-----(AP)----(c)
                   |
                   |
-                 £¨c£©
+                 (c)
 
 (s):server (c):client (AP):access point 
-Between£¨AP£©and (c) is wireless channel
+Between (AP) and (c) is wireless channel
